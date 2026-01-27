@@ -5,7 +5,7 @@ import TitanIcon from "../../assets/images/image-titan.webp";
 
 const GalaxyDetails = [
     {
-      "name": "Moon",
+      "name": "MOON",
       images: {
         png: "./assets/destination/image-moon.png",
         webp: MoonIcon,
@@ -16,7 +16,7 @@ const GalaxyDetails = [
       travel: "3 days"
     },
     {
-      "name": "Mars",
+      "name": "MARS",
       images: {
         png: "./assets/destination/image-mars.png",
         webp: MarsIcon,
@@ -26,7 +26,7 @@ const GalaxyDetails = [
       travel: "9 months"
     },
     {
-      "name": "Europa",
+      "name": "EUROPA",
       images: {
         png: "./assets/destination/image-europa.png",
         webp:  EuropaIcon,
@@ -36,7 +36,7 @@ const GalaxyDetails = [
       travel: "3 years"
     },
     {
-      "name": "Titan",
+      "name": "TITAN",
       images: {
         png: "./assets/destination/image-titan.png",
         webp: TitanIcon,

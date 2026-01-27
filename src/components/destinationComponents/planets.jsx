@@ -20,7 +20,12 @@ const planets = ({ galaxy }) => {
               {galaxy.map((planet, index) => (
                 <button
                   key={planet.name}
-                  onClick={() => setActivePlanet(index)}
+                  onClick={() => setActivePlanet(index)} 
+                  className={`text-white pb-4 font-bold cursor-pointer ${
+                    activePlanet === index
+                      ? "border-b-2 border-white"
+                      : "border-b-2 border-transparent"
+                  }`}
                 >
                   {planet.name}
                 </button>

@@ -43,7 +43,7 @@ const Home = () => {
 
 
             <div className='w-[50%] flex flex-row-reverse my-[35px]'>
-              <div className=' bg-white  rounded-full flex items-center justify-center w-[40%] '>
+              <div className=' bg-white  rounded-full flex items-center justify-center w-[200px] h-[200px] cursor-pointer '>
                 <p className='text-4xl text-black'>EXPLORE</p>
               </div>
             </div>
