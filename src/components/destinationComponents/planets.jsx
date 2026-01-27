@@ -26,7 +26,7 @@ const planets = ({ galaxy }) => {
                       ? "border-b-2 border-white"
                       : "border-b-2 border-transparent"
                   }`}
-                >
+                 >
                   {planet.name}
                 </button>
               ))}

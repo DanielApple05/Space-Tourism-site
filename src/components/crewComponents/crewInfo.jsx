@@ -8,14 +8,14 @@ const CrewInfo = ({ crew }) => {
   return (
 
     <div className='text-white mx-[165px] my-[48px]'>
-      <div >
+      
         <p className='text-[28px] pb-[24px]  '>
           <span className='text-[#979797] mr-[24px]'>02</span>
           MEET YOUR CREW
         </p>
-      </div>
+      
 
-      <div className='flex w-[100%] justify-between items-center space-x-6  '>
+      <div className='flex w-[100%] justify-between items-center gap-[100px]'> 
 
         <div className='w-[50%] '>
           <div className='py-[197px]'>

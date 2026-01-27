@@ -15,8 +15,6 @@ const crew = () => {
 
       <CrewInfo crew={CrewDetails} />
       
-
-   
     </div>
   );
 }
