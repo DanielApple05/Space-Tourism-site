@@ -21,9 +21,9 @@ const planets = ({ galaxy }) => {
                 <button
                   key={planet.name}
                   onClick={() => setActivePlanet(index)} 
-                  className={`text-white pb-4 font-bold cursor-pointer ${
+                  className={`text-white pb-4 font-bold cursor-pointer hover:border-b-gray-500 hover ${
                     activePlanet === index
-                      ? "border-b-2 border-white"
+                      ? "border-b-2 border-white hover:border-b-white"
                       : "border-b-2 border-transparent"
                   }`}
                  >

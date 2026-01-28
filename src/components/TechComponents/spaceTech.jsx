@@ -12,7 +12,7 @@ const spaceTech = ({ spaceLaunch }) => {
   return (
 
     <div className='text-white ml-[165px] my-[48px] '>
-      <h1 className='text-white text-[28px] pb-[24px]'>  <span className='text-[#979797]'>03</span> SPACE LAUNCH 101</h1>
+      <h1 className='text-white text-[28px] pb-[24px]'>  <span className='text-[#979797] pr-[24px]'>03</span> SPACE LAUNCH 101</h1>
 
       <div className='flex w-[100%]'>
 
@@ -22,7 +22,7 @@ const spaceTech = ({ spaceLaunch }) => {
               <button
                 key={index}
                 onClick={() => setActiveBtn(index)}
-                className={`py-[21px] px-[35px] border rounded-full cursor-pointer text-[32px]
+                className={`py-[21px] px-[35px] border rounded-full cursor-pointer text-[32px] hover:ring-2
             ${activeBtn === index ? "bg-white text-black" : "bg-transparent    text-white"}
                `}
               >

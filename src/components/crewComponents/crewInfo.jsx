@@ -37,7 +37,7 @@ const CrewInfo = ({ crew }) => {
             {Array.from({ length: 4 }).map((_, crewTabs) => (
               <button key={crewTabs}
                 onClick={() => setActiveCrew(crewTabs)}
-                className={`w-[10px] h-[10px] bg-gray-600 rounded-lg cursor-pointer ${activeCrew === crewTabs ? 'bg-white' : ''}`}></button>
+                className={`w-[10px] h-[10px] bg-gray-600 rounded-lg cursor-pointer hover:bg-gray-400 ${activeCrew === crewTabs ? 'bg-white hover:bg-white'  : ''}`}></button>
             ))}
 
           </div>

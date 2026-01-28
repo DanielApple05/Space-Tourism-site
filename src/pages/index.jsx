@@ -2,11 +2,13 @@ import React from 'react';
 import Header from '../components/headerComponents/header.jsx'
 import Background from '../assets/images/background-home-desktop.jpg'
 import { Link } from 'react-router-dom';
+import Tab from '../components/headerComponents/tabs.jsx';
 
 
 
 
-const Home = () => {
+const Home =  ( {tab, index} ) => {
+  
 
   return (
     <div className="min-h-screen  bg-cover flex flex-col "
@@ -43,8 +45,18 @@ const Home = () => {
 
 
             <div className='w-[50%] flex flex-row-reverse my-[35px]'>
-              <div className=' bg-white  rounded-full flex items-center justify-center w-[200px] h-[200px] cursor-pointer '>
-                <p className='text-4xl text-black'>EXPLORE</p>
+              <div className=' '>
+
+                <button   className=' text-4xl text-black cursor-pointer
+                py-[117px] px-[68px]
+                 bg-white rounded-full
+                 hover:ring-white/40
+                 hover:ring-[50px]
+                '  onClick={()=> tab.index[1]} 
+                 
+                  >EXPLORE</button>
+
+
               </div>
             </div>
           </div>

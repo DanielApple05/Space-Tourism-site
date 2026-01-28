@@ -27,9 +27,9 @@ const NavButtons = () => {
         <button
           key={index}
           onClick={() => handleNavClick(index, tab)}
-              className={`text-white font-bold  cursor-pointer  ${
+              className={`text-white font-bold  cursor-pointer hover:border-b-gray-500 hover:border-white ${
              activeIndex === index
-              ? "border-b-2 border-white "
+              ? "border-b-2 border-white hover:border-b-white "
               : "border-b-2 border-transparent"
           }`}
          >
