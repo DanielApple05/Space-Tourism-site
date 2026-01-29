@@ -6,7 +6,7 @@ import LogoBox from './logoBox.jsx'
 
 const header = () => {
   return (
-    <div className=' flex justify-between  w-[100%] xl:mt-[40px] mt-[0px] xl:absolute block '>
+    <div className=' flex justify-between  w-[100%] xl:mt-[40px] mt-[0px] xl:py-[0px] py-[24px] '>
 
           <LogoBox/>
       

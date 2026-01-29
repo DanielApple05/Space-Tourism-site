@@ -6,8 +6,9 @@ import GalaxyDetails from '../components/destinationComponents/Galaxy';
 
 const Destinations = () => {
   return (
-    <div className="min-h-screen bg-norepeat bg-cover grid "
+    <div className="min-h-screen bg-norepeat bg-cover xl:pt-[40px] pt-[0px] "
       style={{ backgroundImage: `url(${bgDestination})` }} >
+        
       <Header />
       
         <Planets galaxy={GalaxyDetails}></Planets>

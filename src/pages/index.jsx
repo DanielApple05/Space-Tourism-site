@@ -10,6 +10,7 @@ const Home = ({ tab, index }) => {
     <div className=" xl:pt-[40px] pt-[0px] min-h-screen bg-norepeat bg-cover"
       style={{ backgroundImage: `url(${Background})` }} >
       <Header />
+      
       <div className='flex flex-1 justify-center xl:pt-[128px] pt-[0px] '>
         <div className=' flex xl:px-[165px] px-[24px] xl:py-[128px] py-[24px] '>
           <div className=' flex  xl:flex grid  text-white  w-[100%] xl:gap-[5%] gap-[0px] '>
