@@ -23,7 +23,7 @@ const CrewInfo = ({ crew }) => {
               {crewMembers[activeCrew].role}
 
             </p>
-            <h2 className='xl:text-[56px] text-[24px] font-bold xl:my-[16px] my-[0px]'>
+            <h2 className='xl:text-[56px] text-[24px] font-bold xl:my-[16px] my-[24px] xl:mt-[16px] mt-[8px]'>
               {crewMembers[activeCrew].name}
             </h2>
             <p>
@@ -45,7 +45,7 @@ const CrewInfo = ({ crew }) => {
         </div>
 
         <div className='xl:w-[50%] w-[100%] xl:px-[0px] px-[27px] xl:py-[29px] py-[0px] '>
-          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className=' w-auto xl:block xl:w-[501px] w-[252px] xl:h-[723px] h-[350px] ' />
+          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className=' xl:w-[605px] w-[304px] xl:h-[676px] h-[320px] ' />
         </div>
 
       </div>
