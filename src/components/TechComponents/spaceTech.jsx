@@ -7,23 +7,22 @@ const spaceTech = ({ spaceLaunch }) => {
   const techTab = {
     btn: ["1", "2", "3"]
   };
-  console.log("spaceData", spaceData)
 
   return (
 
-    <div className='text-white ml-[165px] my-[48px] '>
+    <div className='text-white xl:ml-[165px] ml-[0px] xl:my-[48px] my-[0px] '>
       <h1 className='text-white text-[28px] pb-[24px]'>  <span className='text-[#979797] pr-[24px]'>03</span> SPACE LAUNCH 101</h1>
 
-      <div className='flex w-[100%]'>
+      <div className='flex xl:flex-row flex-col xl:flex-col flex-col-reverse w-[100%] '>
 
-        <div className='flex w-[50%] space-x-[64px] mr-[32px] my-[215px]'>
-          <div className="grid gap-[32px]">
+        <div className='flex xl:flex grid xl:w-[50%] w-[100%] xl:space-x-[64px] space-x-[0px] xl:mr-[32px] mr-[0px] xl:my-[215px] my-[0px] '>
+          <div className=" xl:grid flex gap-[32px]">
             {techTab.btn.map((btn, index) => (
               <button
                 key={index}
                 onClick={() => setActiveBtn(index)}
-                className={`py-[21px] px-[35px] border rounded-full cursor-pointer text-[32px] hover:ring-2
-            ${activeBtn === index ? "bg-white text-black" : "bg-transparent    text-white"}
+                className={`xl:py-[21px] py-[9px] xl:px-[35px] px-[15px] border rounded-full cursor-pointer xl:text-[32px] text-[18px] hover:ring-2
+            ${activeBtn === index ? "bg-white text-black" : "bg-transparent  text-white"}
                `}
               >
                 {btn}
@@ -31,11 +30,11 @@ const spaceTech = ({ spaceLaunch }) => {
             ))}
           </div>
 
-          <div className='space-y-[20px] grid content-between '>
-            <h4 className='text-[32px] text-[#979797]'>
+          <div className='xl:space-y-[20px] space-y-[0px] grid content-between '>
+            <h4 className='xl:text-[32px] text-[18px] text-[#979797]'>
               THE TERMINOLOGY
             </h4>
-            <h2 className='text-[56px]'>
+            <h2 className='xl:text-[56px] text-[24px]'>
               {spaceData[activeBtn].name}
             </h2>
             <p>
@@ -48,8 +47,8 @@ const spaceTech = ({ spaceLaunch }) => {
 
         </div>
 
-        <div className='w-[50%] py-[67px]  '>
-          <img src={spaceData[activeBtn].images.portrait} alt="" className='h-[600px] w-[622px] ' />
+        <div className='xl:w-[50%] w-[100%] xl:py-[67px] py-[0px] '>
+          <img src={spaceData[activeBtn].images.portrait} alt="" className='xl:h-[600px] h-[258px] w-[622px] ' />
         </div>
 
       </div>

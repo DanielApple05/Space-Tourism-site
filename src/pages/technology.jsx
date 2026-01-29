@@ -8,7 +8,7 @@ import technologyDetails from '../components/TechComponents/technologyData.json'
 const technology = () => {
 
   return (
-    <div className='min-h-screen bg-cover flex flex-col' style={{ backgroundImage: `url(${BgTech})`}}>
+    <div className='min-h-screen bg-cover xl:pt-[40px] pt-[0px]' style={{ backgroundImage: `url(${BgTech})`}}>
       <Header />  
 
       <SpaceTech spaceLaunch ={ {technologyDetails} } />
