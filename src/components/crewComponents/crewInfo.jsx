@@ -32,7 +32,7 @@ const CrewInfo = ({ crew }) => {
           </div>
 
 
-          <div className='space-x-[40px] flex mt-[40px] xl:pb-[48px] pb-[0px] xl:justify-start justify-center'>
+          <div className='xl:space-x-[40px] space-x-[16px] flex mt-[40px] xl:pb-[48px] pb-[0px] xl:justify-start justify-center'>
 
             {Array.from({ length: 4 }).map((_, crewTabs) => (
               <button key={crewTabs}
