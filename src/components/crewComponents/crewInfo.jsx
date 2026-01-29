@@ -45,7 +45,7 @@ const CrewInfo = ({ crew }) => {
         </div>
 
         <div className='xl:w-[50%] w-[100%] xl:px-[0px] px-[27px] xl:py-[29px] py-[0px] '>
-          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className=' w-auto h-auto' />
+          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className=' w-auto xl:block xl:w-[501px] w-[252px] xl:h-[723px] h-[350px] ' />
         </div>
 
       </div>
