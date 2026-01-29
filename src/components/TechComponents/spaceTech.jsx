@@ -11,12 +11,12 @@ const spaceTech = ({ spaceLaunch }) => {
   return (
 
     <div className='text-white xl:ml-[165px] ml-[0px] xl:my-[48px] my-[0px] '>
-      <h1 className='text-white text-[28px] pb-[24px]'>  <span className='text-[#979797] pr-[24px]'>03</span> SPACE LAUNCH 101</h1>
+      <h1 className='text-white xl:text-[28px] text-[16px] xl:text-start text-center pb-[24px]'>  <span className='text-[#979797] pr-[24px]'>03</span> SPACE LAUNCH 101</h1>
 
-      <div className='flex xl:flex-row flex-col xl:flex-col flex-col-reverse w-[100%] '>
+      <div className='flex xl:flex-row flex-col xl:flex-col flex-col-reverse w-[100%]'>
 
-        <div className='flex xl:flex grid xl:w-[50%] w-[100%] xl:space-x-[64px] space-x-[0px] xl:mr-[32px] mr-[0px] xl:my-[215px] my-[0px] '>
-          <div className=" xl:grid flex gap-[32px]">
+        <div className='flex xl:flex grid xl:w-[50%] w-[100%] xl:space-x-[64px] space-x-[0px] xl:mr-[32px] mr-[0px] xl:my-[215px] my-[0px] xl:block mt-[32px]  justify-center items-center xl:block mb-[40px]'>
+          <div className=" xl:grid flex gap-[32px] xl:block justify-center">
             {techTab.btn.map((btn, index) => (
               <button
                 key={index}
@@ -30,7 +30,7 @@ const spaceTech = ({ spaceLaunch }) => {
             ))}
           </div>
 
-          <div className='xl:space-y-[20px] space-y-[0px] grid content-between '>
+          <div className='xl:space-y-[20px] space-y-[0px] grid content-between  xl:text-start text-center'>
             <h4 className='xl:text-[32px] text-[18px] text-[#979797]'>
               THE TERMINOLOGY
             </h4>
