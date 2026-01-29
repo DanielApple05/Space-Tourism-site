@@ -6,17 +6,17 @@ const planets = ({ galaxy }) => {
 
   return (
     <div className="text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px] ">
-      <h1 className="xl:text-[28px] text-[16px]">
+      <h1 className="xl:text-[28px] text-[16px] xl:text-start text-center">
         <span className="text-[#979797] font-bold">01</span> Pick your
         destination
       </h1>
-      <div className="w-[100%] flex  xl:py-[133px] py-[10px] xl:pr-[47px] pr-[0px] xl:pl-[27px] pl-[0px] justify-between xl:flex grid ">
-        <div className="xl:w-[40%] block ">
+      <div className="w-[100%] flex  xl:py-[133px] py-[0px] xl:pr-[47px] pr-[0px] xl:pl-[27px] pl-[0px] justify-between xl:flex grid ">
+        <div className="xl:w-[40%] block xl:block justify-center flex xl:py-0 py-[26px] xl:px-0 px-[88px]">
           <img src={galaxy[activePlanet].images.webp} alt="" className="xl:w-[480px] w-[150px] xl:h-[480px] h-[150px] "/>
         </div>
-        <div className=" xl:w-[40%] block  ">
-          <div className="border-b-[2px] border-[#979797] mb-[40px] pb-[40px] ">
-            <div className=" space-x-6 font-bold">
+        <div className=" xl:w-[40%] block">
+          <div className="border-b-[2px] border-[#979797] xl:mb-[40px] mb-[24px] xl:pb-[40px] pb-[24px] ">
+            <div className=" space-x-6 font-bold flex xl:block justify-center ">
               {galaxy.map((planet, index) => (
                 <button
                   key={planet.name}
@@ -32,22 +32,22 @@ const planets = ({ galaxy }) => {
               ))}
             </div>
 
-            <div>
-              <div>
+            <div className=" grid xl:justify-items-start justify-items-center">
+            
                 <p className=" xl:text-[110px] text-[56px] ">{galaxy[activePlanet].name}</p>
-              </div>
-              <p className="xl:text-[18px] text-[15px]">{galaxy[activePlanet].descriptions}</p>
+              
+              <p className="xl:text-[18px] text-[15px] xl:text-start text-center">{galaxy[activePlanet].descriptions}</p>
             </div>
        
           </div>
-          <div className="flex  gap-[20px] ">
-            <div className=" w-[50%] flex flex-col justify-between">
+          <div className=" flex xl:flex grid  xl:gap-[20px] gap-[24px] justify-between w-[100%] ">
+            <div className=" grid xl:justify-start justify-center w-[50%]">
               <p className="text-[14px]">AVG DISTANCE
               </p>
               <p className="text-[32px]">{galaxy[activePlanet].distance}</p>
             </div>
 
-            <div className="w-[50%] flex flex-col justify-between">
+            <div className=" grid xl:justify-start justify-center w-[50%]">
               <p className="text-[14px]">EST. TRAVEL TIME</p>
               <p className="text-[28px]">{galaxy[activePlanet].travel}</p>
             </div>
