@@ -7,11 +7,11 @@ const planets = ({ galaxy }) => {
   return (
     <div className="text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px] ">
       <h1 className="xl:text-[28px] text-[16px] xl:text-start text-center">
-        <span className="text-[#979797] font-bold">01</span> Pick your
+        <span className="text-[#979797] font-bold mr-[24px]">01</span> Pick your
         destination
       </h1>
       <div className="w-[100%] flex  xl:py-[133px] py-[0px] xl:pr-[47px] pr-[0px] xl:pl-[27px] pl-[0px] justify-between xl:flex grid ">
-        <div className="xl:w-[40%] block xl:block justify-center flex xl:py-0 py-[26px] xl:px-0 px-[88px]">
+        <div className="xl:w-[40%] block xl:block justify-center flex xl:py-0 py-[26px] xl:px-0 px-[88px] xl:mb-[0px] mb-[32px] ">
           <img src={galaxy[activePlanet].images.webp} alt="" className="xl:w-[480px] w-[150px] xl:h-[480px] h-[150px] "/>
         </div>
         <div className=" xl:w-[40%] block">
@@ -32,7 +32,7 @@ const planets = ({ galaxy }) => {
               ))}
             </div>
 
-            <div className=" grid xl:justify-items-start justify-items-center">
+            <div className=" grid xl:justify-items-start justify-items-center xl:space-y-[0px] space-y-[16px] ">
             
                 <p className=" xl:text-[110px] text-[56px] ">{galaxy[activePlanet].name}</p>
               
