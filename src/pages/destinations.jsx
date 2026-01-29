@@ -6,12 +6,12 @@ import GalaxyDetails from '../components/destinationComponents/Galaxy';
 
 const Destinations = () => {
   return (
-    <div className="min-h-screen  bg-cover flex flex-col "
+    <div className="min-h-screen bg-norepeat bg-cover grid "
       style={{ backgroundImage: `url(${bgDestination})` }} >
       <Header />
-      <div className=''>
+      
         <Planets galaxy={GalaxyDetails}></Planets>
-      </div>
+      
 
     </div>
   );

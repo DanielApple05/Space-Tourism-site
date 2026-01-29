@@ -5,7 +5,7 @@ const planets = ({ galaxy }) => {
   const [activePlanet, setActivePlanet] = useState(0);
 
   return (
-    <div className="text-white w-[] flex flex-col mx-[165px] my-[48px]">
+    <div className="text-white mx-[165px] my-[48px]">
       <h1 className="text-[28px]">
         <span className="text-[#979797] font-bold">01</span> Pick your
         destination

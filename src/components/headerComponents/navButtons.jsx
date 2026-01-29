@@ -51,7 +51,7 @@ const NavButtons = () => {
    </div>
 
       <div
-        className={`fixed right-0 h-screen w-[70%] backdrop-blur-sm text-white pl-[32px]
+        className={`fixed right-0 h-screen w-[70%] backdrop-blur-xl text-white pl-[32px]
   transform transition-transform duration-300 ease-in-out
   xl:hidden z-40 mt-[100px]
   ${isOpen ? "translate-x-0 " : "translate-x-full"}`}
