@@ -7,7 +7,7 @@ const CrewInfo = ({ crew }) => {
 
   return (
 
-    <div className='text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px]'>
+    <div className='text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px] bg-blue-100'>
       
         <p className='xl:text-[28px] text-[16px] xl:pb-[24px] pb-[0px]  xl:text-start text-center'>
           <span className='text-[#979797] mr-[24px]  '>02</span>
@@ -15,10 +15,10 @@ const CrewInfo = ({ crew }) => {
         </p>
       
 
-      <div className='flex xl:flex grid w-[100%] justify-between items-center xl:gap-[100px] gap-[32px]'> 
+      <div className='flex xl:flex grid w-[100%] justify-between items-center xl:gap-[100px] xl:gap-[32px] gap-[0px] xl:mb-[0px] mb-[32px]'> 
 
         <div className='xl:w-[50%] w-[100%] '>
-          <div className='xl:py-[197px] py-[0px] xl:text-start text-center'>
+          <div className='xl:py-[197px] py-[0px] xl:text-start text-center xl:pt-[0px] pt-[40px] xl:pb-0 pb-[24px]'>
             <p className='text-[#979797] xl:text-[32px] text-[18px] font-bold'>
               {crewMembers[activeCrew].role}
 
