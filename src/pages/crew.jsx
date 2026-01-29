@@ -8,7 +8,7 @@ import CrewDetails from '../components/crewComponents/crewData.json';
 const crew = () => {
 
   return (
-    <div className="min-h-screen  bg-cover flex flex-col "
+    <div className="min-h-screen  bg-cover xl:pt-[40px] pt-[0px] "
       style={{ backgroundImage: `url(${bgCrew})` }} >
 
       <Header />

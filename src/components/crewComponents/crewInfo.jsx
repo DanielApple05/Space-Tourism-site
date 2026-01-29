@@ -7,23 +7,23 @@ const CrewInfo = ({ crew }) => {
 
   return (
 
-    <div className='text-white mx-[165px] my-[48px]'>
+    <div className='text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px]'>
       
-        <p className='text-[28px] pb-[24px]  '>
-          <span className='text-[#979797] mr-[24px]'>02</span>
+        <p className='xl:text-[28px] text-[16px] xl:pb-[24px] pb-[0px]  xl:text-start text-center'>
+          <span className='text-[#979797] mr-[24px]  '>02</span>
           MEET YOUR CREW
         </p>
       
 
-      <div className='flex w-[100%] justify-between items-center gap-[100px]'> 
+      <div className='flex xl:flex grid w-[100%] justify-between items-center xl:gap-[100px] gap-[32px]'> 
 
-        <div className='w-[50%] '>
-          <div className='py-[197px]'>
-            <p className='text-[#979797] text-[32px] font-bold'>
+        <div className='xl:w-[50%] w-[100%] '>
+          <div className='xl:py-[197px] py-[0px] xl:text-start text-center'>
+            <p className='text-[#979797] xl:text-[32px] text-[18px] font-bold'>
               {crewMembers[activeCrew].role}
 
             </p>
-            <h2 className='text-[56px] font-bold my-[16px]'>
+            <h2 className='xl:text-[56px] text-[24px] font-bold xl:my-[16px] my-[0px]'>
               {crewMembers[activeCrew].name}
             </h2>
             <p>
@@ -32,19 +32,19 @@ const CrewInfo = ({ crew }) => {
           </div>
 
 
-          <div className='space-x-[40px] flex mt-[40px] pb-[48px] '>
+          <div className='space-x-[40px] flex mt-[40px] xl:pb-[48px] pb-[0px] xl:justify-start justify-center'>
 
             {Array.from({ length: 4 }).map((_, crewTabs) => (
               <button key={crewTabs}
                 onClick={() => setActiveCrew(crewTabs)}
-                className={`w-[10px] h-[10px] bg-gray-600 rounded-lg cursor-pointer hover:bg-gray-400 ${activeCrew === crewTabs ? 'bg-white hover:bg-white'  : ''}`}></button>
+                className={`xl:px-[10px] px-[10px] xl:py-[10px] py-[10px] bg-gray-600 rounded-full cursor-pointer hover:bg-gray-400 ${activeCrew === crewTabs ? 'bg-white hover:bg-white'  : ''}`}></button>
             ))}
 
           </div>
 
         </div>
 
-        <div className='w-[50%] py-[29px]'>
+        <div className='xl:w-[50%] w-[100%] x:py-[29px] py-[0]'>
           <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className='' />
         </div>
 
