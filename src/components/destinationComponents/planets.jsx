@@ -40,16 +40,16 @@ const planets = ({ galaxy }) => {
             </div>
        
           </div>
-          <div className=" flex xl:flex grid  xl:gap-[20px] gap-[24px] justify-between w-[100%] ">
-            <div className=" grid xl:justify-start justify-center w-[50%]">
-              <p className="text-[14px]">AVG DISTANCE
+          <div className=" flex xl:flex grid  xl:gap-[20px] gap-[24px] justify-between w-[100%] xl:block justify-center ">
+            <div className=" grid  xl:w-[50%] w-[100%] xl:text-start text-center">
+              <p className="text-[14px] ">AVG DISTANCE
               </p>
-              <p className="text-[32px]">{galaxy[activePlanet].distance}</p>
+              <p className="xl:text-[32px] text-[28px]">{galaxy[activePlanet].distance}</p>
             </div>
 
-            <div className=" grid xl:justify-start justify-center w-[50%]">
+            <div className=" grid  xl:w-[50%] w-[100%] xl:text-start text-center">
               <p className="text-[14px]">EST. TRAVEL TIME</p>
-              <p className="text-[28px]">{galaxy[activePlanet].travel}</p>
+              <p className="text-[28px] ">{galaxy[activePlanet].travel}</p>
             </div>
           </div>
         </div>
