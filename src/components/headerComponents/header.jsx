@@ -6,13 +6,14 @@ import LogoBox from './logoBox.jsx'
 
 const header = () => {
   return (
-    <div className='mt-[40px] flex justify-between h-[96px] w-[100%] '>
+    <div className=' flex xl:justify-between justify-between xl:h-[96px] h-[86px] w-[100%] xl:mt-[40px] mt-[0px] '>
 
       <div className=' flex items-center w-[40%]'>
 
           <LogoBox/>
         
       </div>
+      
        <NavButtons />
     </div>
   );
