@@ -40,7 +40,7 @@ const NavButtons = () => {
         ))}
       </div >
 
-   <div className=" z-50 py-[32px] pl-[24px]">
+   <div className=" z-50 pl-[24px]">
        <button
         className="xl:hidden text-3xl text-white font-bold ]"
         onClick={() => setIsOpen(!isOpen)}
