@@ -30,7 +30,7 @@ const NavButtons = () => {
           <button
             key={index}
             onClick={() => handleNavClick(index, tab)}
-            className={`text-white font-bold  cursor-pointer hover:border-b-gray-500  ${activeIndex === index
+            className={`text-white font-bold  cursor-pointer hover:border-b-gray-500 py-[38px] ${activeIndex === index
               ? "border-b-2 border-white hover:border-b-white "
               : "border-b-2 border-transparent"
               }`}
