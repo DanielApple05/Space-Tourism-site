@@ -7,7 +7,7 @@ const CrewInfo = ({ crew }) => {
 
   return (
 
-    <div className='text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px] bg-blue-100'>
+    <div className='text-white xl:mx-[165px] mx-[24px] xl:my-[48px] my-[24px]'>
       
         <p className='xl:text-[28px] text-[16px] xl:pb-[24px] pb-[0px]  xl:text-start text-center'>
           <span className='text-[#979797] mr-[24px]  '>02</span>
@@ -15,7 +15,7 @@ const CrewInfo = ({ crew }) => {
         </p>
       
 
-      <div className='flex xl:flex grid w-[100%] justify-between items-center xl:gap-[100px] xl:gap-[32px] gap-[0px] xl:mb-[0px] mb-[32px]'> 
+      <div className=' xl:flex grid w-[100%] justify-between items-center xl:gap-[100px] xl:gap-[32px] gap-[0px] xl:mb-[0px] mb-[32px]'> 
 
         <div className='xl:w-[50%] w-[100%] '>
           <div className='xl:py-[197px] py-[0px] xl:text-start text-center xl:pt-[0px] pt-[40px] xl:pb-0 pb-[24px]'>
@@ -32,7 +32,7 @@ const CrewInfo = ({ crew }) => {
           </div>
 
 
-          <div className='xl:space-x-[40px] space-x-[16px] flex mt-[40px] xl:pb-[48px] pb-[0px] xl:justify-start justify-center'>
+          <div className='xl:space-x-[40px] space-x-[16px] flex xl:mt-[40px] mt-[24px] xl:pb-[48px] pb-[32px] xl:justify-start justify-center'>
 
             {Array.from({ length: 4 }).map((_, crewTabs) => (
               <button key={crewTabs}
@@ -44,8 +44,8 @@ const CrewInfo = ({ crew }) => {
 
         </div>
 
-        <div className='xl:w-[50%] w-[100%] x:py-[29px] py-[0]'>
-          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className='' />
+        <div className='xl:w-[50%] w-[100%] xl:px-[0px] px-[27px] xl:py-[29px] py-[0px] '>
+          <img src={crewMembers[activeCrew].images.png} alt={crewMembers[activeCrew].name} className=' w-auto h-auto' />
         </div>
 
       </div>
