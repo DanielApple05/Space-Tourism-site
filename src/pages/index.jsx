@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
   return (
-    <div className=" xl:pt-[40px] pt-[0px] min-h-screen bg-norepeat bg-cover"
-      style={{ backgroundImage: `url(${Background})` }} >
+    <div className=" xl:pt-[40px] pt-[0px] min-h-screen bg-norepeat bg-cover  xl:bg-[url('/src/assets/images/background-home-desktop.jpg')] bg-[url('/src/assets/images/background-home-mobile.jpg')] "
+       >
       <Header />
       
       <div className='flex flex-1 justify-center xl:pt-[128px] pt-[0px] '>

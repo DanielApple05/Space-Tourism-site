@@ -48,7 +48,7 @@ const spaceTech = ({ spaceLaunch }) => {
         </div>
 
         <div className='xl:w-[50%] w-[100%] xl:py-[67px] py-[0px] '>
-          <img src={spaceData[activeBtn].images.portrait} alt="" className='xl:h-[600px] h-[258px] w-[622px] ' />
+          <img src={spaceData[activeBtn].images.portrait} alt="" className='xl:h-[600px] h-[258px] w-[622px]  ' />
         </div>
 
       </div>
