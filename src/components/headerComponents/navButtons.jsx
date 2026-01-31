@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Tabs from "./tabs.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const NavButtons = () => {
   const navigate = useNavigate();
@@ -11,12 +13,17 @@ const NavButtons = () => {
     navigate(tab.path);
     setActiveIndex(index);
   }
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState();
 
   const findCurrentTabIndex = () => {
     const currentTabIndex = Tabs.findIndex(tab => tab.path === pathname);
     setActiveIndex(currentTabIndex !== -1 ? currentTabIndex : 0);
   }
+
+  // ImageSwitcher = [{ x, o }]
+
+  //   const ImageSwitcher = () => {
+  //   const [currentIcon, setCurrentIcon] = useState(Icon1)};
 
   useEffect(() => {
     findCurrentTabIndex();
@@ -39,17 +46,18 @@ const NavButtons = () => {
           </button>
         ))}
       </div >
+      <div className=" z-50 pl-[24px]">
+        <button
+          className="xl:hidden text-3xl text-white font-bold ]"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <FontAwesomeIcon
+            icon={isOpen ? faXmark : faBars}
+         className={`transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
 
-   <div className=" z-50 pl-[24px]">
-       <button
-        className="xl:hidden text-3xl text-white font-bold ]"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        ☰
-      </button>
-
-   </div>
-
+          />
+        </button>
+      </div>
       <div
         className={`fixed right-0 h-screen w-[70%] backdrop-blur-2xl text-white pl-[32px]
   transform transition-transform duration-300 ease-in-out
@@ -65,9 +73,9 @@ const NavButtons = () => {
                 setIsOpen(false);
               }}
               className={`font-bold text-lg text-start hover:border-r-gray-500 ${activeIndex === index
-              ? "border-r-2 border-white hover:border-r-white "
-              : "border-r-2 border-transparent"
-              }`}
+                ? "border-r-2 border-white hover:border-r-white "
+                : "border-r-2 border-transparent"
+                }`}
             >
               {tab.label}
             </button>
