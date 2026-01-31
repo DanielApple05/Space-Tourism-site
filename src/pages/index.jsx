@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../components/headerComponents/header.jsx'
 import Background from '../assets/images/background-home-desktop.jpg'
 import { Link } from 'react-router-dom';
-import Tab from '../components/headerComponents/tabs.jsx';
 
-const Home = ({ tab, index }) => {
+
+const Home = () => {
 
   return (
     <div className=" xl:pt-[40px] pt-[0px] min-h-screen bg-norepeat bg-cover"
@@ -30,23 +30,19 @@ const Home = ({ tab, index }) => {
             <div className=' xl:w-[50%] w-[100%] flex xl:flex-row-reverse justify-around   xl:my-[35px] my-[119px] '>
 
 
-              <button className=' xl:text-4xl text-lg text-black cursor-pointer
-                xl:py-[117px] py-[61px] xl:px-[68px] px-[33px]
-                 bg-white rounded-full
-                 hover:ring-white/40
-                 hover:ring-[50px]
-                '  onClick={() => tab.index[1]}
-
-              >EXPLORE</button>
+              <Link to="/destinations">
+                <button className=' xl:text-4xl text-lg text-black cursor-pointer
+                  xl:py-[117px] py-[61px] xl:px-[68px] px-[33px]
+                   bg-white rounded-full
+                   hover:ring-white/40
+                   hover:ring-[50px]
+                  ' 
+                >EXPLORE</button>
+              </Link>
 
             </div>
           </div>
         </div>
-
-        <Link
-          to="/destinations"
-        >
-        </Link>
       </div>
 
     </div>
