@@ -52,10 +52,7 @@ const spaceTech = ({ spaceLaunch }) => {
         </div>
 
       </div>
-
-
-
-    </div>
+</div>
 
   );
 }
