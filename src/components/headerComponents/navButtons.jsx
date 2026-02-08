@@ -20,11 +20,6 @@ const NavButtons = () => {
     setActiveIndex(currentTabIndex !== -1 ? currentTabIndex : 0);
   }
 
-  // ImageSwitcher = [{ x, o }]
-
-  //   const ImageSwitcher = () => {
-  //   const [currentIcon, setCurrentIcon] = useState(Icon1)};
-
   useEffect(() => {
     findCurrentTabIndex();
   }, [pathname]);
